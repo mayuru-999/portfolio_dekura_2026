@@ -1,0 +1,24 @@
+#pragma once
+#include "../Library/GameObject.h"
+
+class Player:public GameObject
+{
+public:
+	Player();
+	~Player();
+	void Update() override;
+	void Draw() override;
+
+private:
+	int jgLImage;	//”»’èƒ‰ƒCƒ“
+	int jgRImage;	//”»’èƒ‰ƒCƒ“
+	int jgacImage;	//”»’èƒ‰ƒCƒ“
+
+	int movement;
+
+	bool move2L = FALSE;
+	bool move2R = FALSE;
+	bool activeKey[6];
+
+	VECTOR2 player;
+};
