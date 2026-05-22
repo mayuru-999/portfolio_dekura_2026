@@ -138,10 +138,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="Sorce\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Sorce\Main.cpp">
+    <ClCompile Include="Sorce\stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -806,10 +806,10 @@
     </Xml>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
+    <ClInclude Include="Sorce\GameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sorce\GameObject.h">
+    <ClInclude Include="Sorce\stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,10 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\student\\Desktop\\dekura\\",
+  "WorkspaceRootPath": "C:\\Users\\student\\Documents\\portfolio_dekura_2026\\dekura\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5F8B531-B290-4765-9FE3-D095FBC3717D}|dekura\\dekura.vcxproj|C:\\Users\\student\\Desktop\\dekura\\dekura\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A5F8B531-B290-4765-9FE3-D095FBC3717D}|dekura\\dekura.vcxproj|solutionrelative:dekura\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A5F8B531-B290-4765-9FE3-D095FBC3717D}|dekura\\dekura.vcxproj|C:\\Users\\student\\Documents\\portfolio_dekura_2026\\dekura\\dekura\\Sorce\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A5F8B531-B290-4765-9FE3-D095FBC3717D}|dekura\\dekura.vcxproj|solutionrelative:dekura\\Sorce\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F8B531-B290-4765-9FE3-D095FBC3717D}|dekura\\dekura.vcxproj|C:\\Users\\student\\Documents\\portfolio_dekura_2026\\dekura\\dekura\\Sorce\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A5F8B531-B290-4765-9FE3-D095FBC3717D}|dekura\\dekura.vcxproj|solutionrelative:dekura\\Sorce\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\student\\Desktop\\dekura\\dekura\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +21,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\Users\\student\\Desktop\\dekura\\dekura\\Main.cpp",
-              "RelativeDocumentMoniker": "dekura\\Main.cpp",
-              "ToolTip": "C:\\Users\\student\\Desktop\\dekura\\dekura\\Main.cpp",
-              "RelativeToolTip": "dekura\\Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\student\\Documents\\portfolio_dekura_2026\\dekura\\dekura\\Sorce\\Main.cpp",
+              "RelativeDocumentMoniker": "dekura\\Sorce\\Main.cpp",
+              "ToolTip": "C:\\Users\\student\\Documents\\portfolio_dekura_2026\\dekura\\dekura\\Sorce\\Main.cpp",
+              "RelativeToolTip": "dekura\\Sorce\\Main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-22T04:49:45.84Z",
+              "WhenOpened": "2026-05-22T05:23:11.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "stdafx.h",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\dekura\\dekura\\stdafx.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\dekura\\dekura\\stdafx.h",
+              "ToolTip": "C:\\Users\\student\\Desktop\\dekura\\dekura\\stdafx.h",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\dekura\\dekura\\stdafx.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-22T05:16:08.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameObject.h",
+              "DocumentMoniker": "C:\\Users\\student\\Documents\\portfolio_dekura_2026\\dekura\\dekura\\Sorce\\GameObject.h",
+              "RelativeDocumentMoniker": "dekura\\Sorce\\GameObject.h",
+              "ToolTip": "C:\\Users\\student\\Documents\\portfolio_dekura_2026\\dekura\\dekura\\Sorce\\GameObject.h",
+              "RelativeToolTip": "dekura\\Sorce\\GameObject.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-22T05:08:31.659Z",
               "EditorCaption": ""
             }
           ]
