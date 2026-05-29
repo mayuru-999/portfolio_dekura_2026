@@ -115,7 +115,9 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Sorce\App.cpp" />
     <ClCompile Include="Sorce\Main.cpp" />
+    <ClCompile Include="Sorce\ObjectManager.cpp" />
     <ClCompile Include="Sorce\stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -322,7 +324,9 @@
     <Xml Include="App\example\xml\test.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Sorce\App.h" />
     <ClInclude Include="Sorce\GameObject.h" />
+    <ClInclude Include="Sorce\ObjectManager.h" />
     <ClInclude Include="Sorce\stdafx.h" />
   </ItemGroup>
   <ItemGroup>

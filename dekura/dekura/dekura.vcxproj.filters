@@ -136,13 +136,22 @@
     <Filter Include="Resource Files\engine\font\min">
       <UniqueIdentifier>{1b103960-f11a-4515-b4f1-f59333ce00d9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{05cabe5a-0a55-4251-8810-8a4c589df811}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sorce\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Sorce\ObjectManager.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
     <ClCompile Include="Sorce\stdafx.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorce\App.cpp">
+      <Filter>App</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -807,10 +816,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sorce\GameObject.h">
-      <Filter>Header Files</Filter>
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorce\ObjectManager.h">
+      <Filter>App</Filter>
     </ClInclude>
     <ClInclude Include="Sorce\stdafx.h">
-      <Filter>Header Files</Filter>
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorce\App.h">
+      <Filter>App</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
