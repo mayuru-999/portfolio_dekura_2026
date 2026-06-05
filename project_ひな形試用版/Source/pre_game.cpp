@@ -6,11 +6,11 @@ pre_game::pre_game()
 {
 	count = 0;
 	new Player();
-	new Notes(423, 0, 1);
-	new Notes(423, -100, 1);
-	new Notes(423, -200, 1);
-	new Notes(423, -300, 1);
-	new Notes(423, -400, 1);
+	new Notes(418, 0, 1);
+	new Notes(418, -100, 1);
+	new Notes(418, -200, 1);
+	new Notes(418, -300, 1);
+	new Notes(418, -400, 1);
 }
 
 pre_game::pre_game(int level)
@@ -26,7 +26,7 @@ void pre_game::Update()
 {
 	count--;
 	if (count <= -100) {
-		new Notes(423, -100, 1);
+		new Notes(418, -100, 1);
 		count = 0;
 	}
 }

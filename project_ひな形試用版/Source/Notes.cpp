@@ -11,8 +11,8 @@ Notes::Notes(int x, int y, int num)
 
 	char bgfile[60];
 	sprintf_s<60>(bgfile, "data/image/skin/notes_%d.png", num);
-
 	nImage = LoadGraph(bgfile);
+	tolerance = 5.0f;
 }
 
 Notes::~Notes()
@@ -31,4 +31,19 @@ void Notes::Update()
 void Notes::Draw()
 {
 	DrawGraph(position.x, position.y, nImage, FALSE);
+}
+
+bool Notes::isHit(VECTOR2 player)
+{
+	if (position.x == player.x && position.y == player.y) 
+	{
+		DestroyMe();
+		return TRUE;
+	}
+	else if (position.x == player.x && fabsf(position.y - player.y) < tolerance)
+	{
+		DestroyMe();
+		return TRUE;
+	}
+	return false;
 }
