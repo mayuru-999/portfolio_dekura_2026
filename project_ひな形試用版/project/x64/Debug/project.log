@@ -1,6 +1,7 @@
-﻿  Player.cpp
-C:\Users\student\Documents\portfolio_dekura_2026\project_ひな形試用版\Source\Player.cpp(63,32): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\student\Documents\portfolio_dekura_2026\project_ひな形試用版\Source\Player.cpp(63,16): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\student\Documents\portfolio_dekura_2026\project_ひな形試用版\Source\Player.cpp(69,26): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\student\Documents\portfolio_dekura_2026\project_ひな形試用版\Source\Player.cpp(75,27): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-  project.vcxproj -> C:\Users\student\Documents\portfolio_dekura_2026\project_ひな形試用版\x64\Debug\project.exe
+﻿  Notes.cpp
+C:\Users\student\Desktop\pot\project_ひな形試用版\Source\Notes.cpp(10,24): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\student\Desktop\pot\project_ひな形試用版\Source\Notes.cpp(10,21): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\student\Desktop\pot\project_ひな形試用版\Source\Notes.cpp(33,32): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\student\Desktop\pot\project_ひな形試用版\Source\Notes.cpp(33,20): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\student\Desktop\pot\project_ひな形試用版\Source\Notes.cpp(49,60): warning C4390: ';': 制御が空の文が見つかりました。意図した記述でしょうか?
+  project.vcxproj -> C:\Users\student\Desktop\pot\project_ひな形試用版\x64\Debug\project.exe

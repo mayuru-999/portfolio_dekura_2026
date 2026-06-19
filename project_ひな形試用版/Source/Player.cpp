@@ -120,7 +120,24 @@ void Player::CheckHitNotes(int num)
 {
 	VECTOR2 jg = VECTOR2(player.x + 5 + (74 * num), 600);
 	auto notes = FindGameObjects<Notes>();
-	for (auto n : notes) {
-		n->isHit(jg);
+	for (auto n : notes) 
+	{
+		switch (n->isHit(jg))
+		{
+		case JudgeScore::NOHIT:
+			break;
+		case JudgeScore::MISS:
+			DrawString(0, 20, "MISS", GetColor(255, 255, 255));
+			break;
+		case JudgeScore::HIT:
+			DrawString(0, 20, "HIT", GetColor(255, 255, 255));
+			break;
+		case JudgeScore::GOOD:
+			DrawString(0, 20, "GOOD", GetColor(255, 255, 255));
+			break;
+		case JudgeScore::EXCELENT:
+			DrawString(0, 20, "EXCELENT", GetColor(255, 255, 255));
+			break;
+		}
 	}
 }

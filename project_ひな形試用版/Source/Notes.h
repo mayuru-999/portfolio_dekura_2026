@@ -1,6 +1,15 @@
 #pragma once
 #include "../Library/GameObject.h"
 
+enum class JudgeScore
+{
+	EXCELENT,
+	GOOD,
+	HIT,
+	MISS,
+	NOHIT
+};
+
 class Notes:public GameObject
 {
 public:
@@ -10,7 +19,7 @@ public:
 	void Update() override;
 	void Draw() override;
 
-	bool isHit(VECTOR2 player);
+	enum JudgeScore isHit(VECTOR2 player);
 
 private:
 	int nImage;

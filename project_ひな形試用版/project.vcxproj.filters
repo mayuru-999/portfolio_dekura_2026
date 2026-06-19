@@ -63,6 +63,9 @@
     <ClCompile Include="Source\Player.cpp">
       <Filter>PlayScene\maingame</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Score.cpp">
+      <Filter>PlayScene\maingame</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Screen.h" />
@@ -141,6 +144,9 @@
       <Filter>PlayScene\maingame</Filter>
     </ClInclude>
     <ClInclude Include="Source\GameOption.h">
+      <Filter>PlayScene\maingame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Score.h">
       <Filter>PlayScene\maingame</Filter>
     </ClInclude>
   </ItemGroup>

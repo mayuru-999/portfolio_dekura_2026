@@ -158,6 +158,7 @@
     <ClInclude Include="Source\Notes.h" />
     <ClInclude Include="Source\Player.h" />
     <ClInclude Include="Source\pre_game.h" />
+    <ClInclude Include="Source\Score.h" />
     <ClInclude Include="Source\Screen.h" />
     <ClInclude Include="Source\PlayScene.h" />
     <ClInclude Include="Source\SceneFactory.h" />
@@ -185,6 +186,7 @@
     <ClCompile Include="Source\PlayScene.cpp" />
     <ClCompile Include="Source\pre_game.cpp" />
     <ClCompile Include="Source\SceneFactory.cpp" />
+    <ClCompile Include="Source\Score.cpp" />
     <ClCompile Include="Source\SE.cpp" />
     <ClCompile Include="Source\TitleScene.cpp" />
   </ItemGroup>

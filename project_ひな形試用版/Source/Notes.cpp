@@ -12,6 +12,7 @@ Notes::Notes(int x, int y, int num)
 	char bgfile[60];
 	sprintf_s<60>(bgfile, "data/image/skin/notes_%d.png", num);
 	nImage = LoadGraph(bgfile);
+
 	tolerance = 5.0f;
 }
 
@@ -33,17 +34,23 @@ void Notes::Draw()
 	DrawGraph(position.x, position.y, nImage, FALSE);
 }
 
-bool Notes::isHit(VECTOR2 player)
+enum JudgeScore Notes::isHit(VECTOR2 player)
 {
-	if (position.x == player.x && position.y == player.y) 
+	if (position.x != player.x) return JudgeScore::NOHIT;
+	if (position.y == player.y)
 	{
 		DestroyMe();
-		return TRUE;
+		return JudgeScore::EXCELENT;
 	}
-	else if (position.x == player.x && fabsf(position.y - player.y) < tolerance)
+	else if (fabsf(position.y - player.y) < tolerance)
 	{
 		DestroyMe();
-		return TRUE;
+		return JudgeScore::GOOD;
 	}
-	return false;
+	else if (fabsf(position.y - player.y) < tolerance + 10.0f);
+	{
+		DestroyMe();
+		return JudgeScore::MISS;
+	}
+	return JudgeScore::NOHIT;
 }
