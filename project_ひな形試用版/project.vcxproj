@@ -155,6 +155,7 @@
     <ClInclude Include="Source\BootScene.h" />
     <ClInclude Include="Source\Common.h" />
     <ClInclude Include="Source\GameOption.h" />
+    <ClInclude Include="Source\Loader.h" />
     <ClInclude Include="Source\Notes.h" />
     <ClInclude Include="Source\Player.h" />
     <ClInclude Include="Source\pre_game.h" />

@@ -149,6 +149,9 @@
     <ClInclude Include="Source\Score.h">
       <Filter>PlayScene\maingame</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Loader.h">
+      <Filter>PlayScene\maingame</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Library">
