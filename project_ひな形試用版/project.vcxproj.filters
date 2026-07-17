@@ -57,13 +57,13 @@
     <ClCompile Include="Source\Notes.cpp">
       <Filter>PlayScene\maingame</Filter>
     </ClCompile>
-    <ClCompile Include="Source\pre_game.cpp">
-      <Filter>PlayScene\Songs</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Player.cpp">
       <Filter>PlayScene\maingame</Filter>
     </ClCompile>
     <ClCompile Include="Source\Score.cpp">
+      <Filter>PlayScene\maingame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Loader.cpp">
       <Filter>PlayScene\maingame</Filter>
     </ClCompile>
   </ItemGroup>
@@ -137,9 +137,6 @@
     <ClInclude Include="Source\Notes.h">
       <Filter>PlayScene\maingame</Filter>
     </ClInclude>
-    <ClInclude Include="Source\pre_game.h">
-      <Filter>PlayScene\Songs</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Player.h">
       <Filter>PlayScene\maingame</Filter>
     </ClInclude>
@@ -174,9 +171,6 @@
     </Filter>
     <Filter Include="PlayScene\maingame">
       <UniqueIdentifier>{c084b462-b779-4cb3-a7cd-d7ddeaba4020}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="PlayScene\Songs">
-      <UniqueIdentifier>{d7669880-7ff2-4e74-a82e-c5545efa4b67}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

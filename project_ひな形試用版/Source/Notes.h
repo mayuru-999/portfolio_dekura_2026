@@ -1,28 +1,24 @@
 #pragma once
+#include "Common.h"
 #include "../Library/GameObject.h"
-
-enum class JudgeScore
-{
-	EXCELENT,
-	GOOD,
-	HIT,
-	MISS,
-	NOHIT
-};
 
 class Notes:public GameObject
 {
 public:
 	Notes();
-	Notes(int x, int y, int num);
+	Notes(int frame, int lane);
 	~Notes();
 	void Update() override;
 	void Draw() override;
 
-	enum JudgeScore isHit(VECTOR2 player);
+	Common::HitType isHit(int currentFrame);
 
 private:
+	int frame;
+	int lane;
+
 	int nImage;
-	float tolerance;
+	int music;
+	float speed;
 	VECTOR2 position;
 };

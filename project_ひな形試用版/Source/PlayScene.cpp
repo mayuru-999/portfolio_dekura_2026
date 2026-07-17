@@ -1,9 +1,9 @@
 #include "PlayScene.h"
-#include "pre_game.h"
+#include "Loader.h"
 
 PlayScene::PlayScene()
 {
-	new pre_game();
+	new Loader();
 }
 
 PlayScene::~PlayScene()

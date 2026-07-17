@@ -15,7 +15,7 @@ public:
 		3, //Excellent
 		6, //Good
 		9, //Hit
-		0  //Miss
+		12  //Miss
 	};
 	struct NoteData
 	{

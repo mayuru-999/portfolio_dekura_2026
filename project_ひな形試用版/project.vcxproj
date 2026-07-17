@@ -158,7 +158,6 @@
     <ClInclude Include="Source\Loader.h" />
     <ClInclude Include="Source\Notes.h" />
     <ClInclude Include="Source\Player.h" />
-    <ClInclude Include="Source\pre_game.h" />
     <ClInclude Include="Source\Score.h" />
     <ClInclude Include="Source\Screen.h" />
     <ClInclude Include="Source\PlayScene.h" />
@@ -182,10 +181,10 @@
     <ClCompile Include="Library\Time.cpp" />
     <ClCompile Include="Source\BootScene.cpp" />
     <ClCompile Include="Source\Common.cpp" />
+    <ClCompile Include="Source\Loader.cpp" />
     <ClCompile Include="Source\Notes.cpp" />
     <ClCompile Include="Source\Player.cpp" />
     <ClCompile Include="Source\PlayScene.cpp" />
-    <ClCompile Include="Source\pre_game.cpp" />
     <ClCompile Include="Source\SceneFactory.cpp" />
     <ClCompile Include="Source\Score.cpp" />
     <ClCompile Include="Source\SE.cpp" />
