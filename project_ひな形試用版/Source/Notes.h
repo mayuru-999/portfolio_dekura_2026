@@ -1,24 +1,24 @@
 #pragma once
 #include "Common.h"
+#include "GameOption.h"
 #include "../Library/GameObject.h"
 
 class Notes:public GameObject
 {
 public:
 	Notes();
-	Notes(int frame, int lane);
+	Notes(int m_lane, float m_timing);
 	~Notes();
 	void Update() override;
 	void Draw() override;
 
-	Common::HitType isHit(int currentFrame);
+	Common::HitType isHit(int m_lane);
 
 private:
-	int frame;
 	int lane;
+	float timing;
 
 	int nImage;
 	int music;
-	float speed;
 	VECTOR2 position;
 };

@@ -50,8 +50,7 @@
     <ClCompile Include="Library\Time.cpp">
       <Filter>Library</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Common.cpp" />
-    <ClCompile Include="Source\SE.cpp">
+    <ClCompile Include="Source\Sound.cpp">
       <Filter>Sounds</Filter>
     </ClCompile>
     <ClCompile Include="Source\Notes.cpp">
@@ -60,11 +59,24 @@
     <ClCompile Include="Source\Player.cpp">
       <Filter>PlayScene\maingame</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Score.cpp">
-      <Filter>PlayScene\maingame</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Loader.cpp">
       <Filter>PlayScene\maingame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\JudgeEffect.cpp">
+      <Filter>PlayScene\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DebugCursol.cpp" />
+    <ClCompile Include="Source\TitleUi.cpp">
+      <Filter>TitleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UiLabel.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UiButton.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UiImage.cpp">
+      <Filter>Ui</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -131,7 +143,7 @@
       <Filter>Library</Filter>
     </ClInclude>
     <ClInclude Include="Source\Common.h" />
-    <ClInclude Include="Source\SE.h">
+    <ClInclude Include="Source\Sound.h">
       <Filter>Sounds</Filter>
     </ClInclude>
     <ClInclude Include="Source\Notes.h">
@@ -148,6 +160,22 @@
     </ClInclude>
     <ClInclude Include="Source\Loader.h">
       <Filter>PlayScene\maingame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CheckKey.h">
+      <Filter>PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\JudgeEffect.h">
+      <Filter>PlayScene\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DebugCursol.h" />
+    <ClInclude Include="Source\TitleUi.h">
+      <Filter>TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UiElements.h">
+      <Filter>Ui\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SongLoader.h">
+      <Filter>TitleScene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +199,15 @@
     </Filter>
     <Filter Include="PlayScene\maingame">
       <UniqueIdentifier>{c084b462-b779-4cb3-a7cd-d7ddeaba4020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlayScene\Effect">
+      <UniqueIdentifier>{7f78ffd1-b67e-43ad-b694-a60b9664a070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ui">
+      <UniqueIdentifier>{501de2c2-a0a5-48cc-bea8-767050440c6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ui\Header">
+      <UniqueIdentifier>{e645b7fa-3860-467f-aaf3-9d3ef0da3182}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

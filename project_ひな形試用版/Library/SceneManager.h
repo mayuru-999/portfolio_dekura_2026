@@ -6,6 +6,9 @@
 /// <author>N.Hanai</author>
 #include <string>
 #include <list>
+#include "../Source/Common.h"
+
+using namespace std;
 
 class SceneFactory;
 class SceneBase;
@@ -47,6 +50,8 @@ namespace SceneManager
 	/// </summary>
 	/// <returns>I—¹‚µ‚æ‚¤‚Æ‚µ‚Ä‚¢‚éê‡‚Étrue</returns>
 	bool IsExit();
+
+	extern Common::SongData selectedMusic;
 };
 
 template<class C>

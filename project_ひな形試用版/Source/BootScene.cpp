@@ -1,7 +1,9 @@
 #include "BootScene.h"
+#include "DebugCursol.h"
 
 BootScene::BootScene()
 {
+	new DebugCursol();
 }
 
 BootScene::~BootScene()

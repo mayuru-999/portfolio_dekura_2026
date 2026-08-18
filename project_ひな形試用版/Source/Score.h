@@ -1,13 +1,35 @@
 #pragma once
-#include "../Library/GameObject.h"
-
-class Score :public GameObject
+#include "Common.h"
+#include "JudgeEffect.h"
+class Score
 {
-public:
-	Score();
-	~Score();
-
 private:
-	int totalScore;
-	int ExCount;
+	Common c;
+
+public:
+	int score = 0;
+	int combo = 0;
+
+	void Init()
+	{
+		score = 0;
+		combo = 0;
+	}
+	void AddScore(Common::HitType hitType)
+	{
+		if (hitType == c.NoHit) return;
+
+		new JudgeEffect(hitType);
+
+		if (hitType == c.Miss) {
+			combo = 0;
+			return;
+		}
+
+		new JudgeEffect(hitType);
+		score += Common::HitScore[hitType];
+		combo++;
+	}
 };
+
+inline Score s;

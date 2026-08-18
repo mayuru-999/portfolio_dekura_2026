@@ -153,8 +153,11 @@
     <ClInclude Include="Library\SceneManager.h" />
     <ClInclude Include="Library\Time.h" />
     <ClInclude Include="Source\BootScene.h" />
+    <ClInclude Include="Source\CheckKey.h" />
     <ClInclude Include="Source\Common.h" />
+    <ClInclude Include="Source\DebugCursol.h" />
     <ClInclude Include="Source\GameOption.h" />
+    <ClInclude Include="Source\JudgeEffect.h" />
     <ClInclude Include="Source\Loader.h" />
     <ClInclude Include="Source\Notes.h" />
     <ClInclude Include="Source\Player.h" />
@@ -162,8 +165,11 @@
     <ClInclude Include="Source\Screen.h" />
     <ClInclude Include="Source\PlayScene.h" />
     <ClInclude Include="Source\SceneFactory.h" />
-    <ClInclude Include="Source\SE.h" />
+    <ClInclude Include="Source\SongLoader.h" />
+    <ClInclude Include="Source\Sound.h" />
     <ClInclude Include="Source\TitleScene.h" />
+    <ClInclude Include="Source\TitleUi.h" />
+    <ClInclude Include="Source\UiElements.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ImGui\imgui.cpp" />
@@ -180,15 +186,19 @@
     <ClCompile Include="Library\SceneManager.cpp" />
     <ClCompile Include="Library\Time.cpp" />
     <ClCompile Include="Source\BootScene.cpp" />
-    <ClCompile Include="Source\Common.cpp" />
+    <ClCompile Include="Source\DebugCursol.cpp" />
+    <ClCompile Include="Source\JudgeEffect.cpp" />
     <ClCompile Include="Source\Loader.cpp" />
     <ClCompile Include="Source\Notes.cpp" />
     <ClCompile Include="Source\Player.cpp" />
     <ClCompile Include="Source\PlayScene.cpp" />
     <ClCompile Include="Source\SceneFactory.cpp" />
-    <ClCompile Include="Source\Score.cpp" />
-    <ClCompile Include="Source\SE.cpp" />
+    <ClCompile Include="Source\Sound.cpp" />
     <ClCompile Include="Source\TitleScene.cpp" />
+    <ClCompile Include="Source\TitleUi.cpp" />
+    <ClCompile Include="Source\UiButton.cpp" />
+    <ClCompile Include="Source\UiImage.cpp" />
+    <ClCompile Include="Source\UiLabel.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

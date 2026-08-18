@@ -11,7 +11,10 @@ namespace
 	SceneFactory* m_factory;   // シーン切り替え用のFactoryのポインター
 	bool m_exitRequest;
 };
-
+namespace SceneManager
+{
+	Common::SongData selectedMusic;
+}
 void SceneManager::Init()
 {
 	m_currentName = new std::string;

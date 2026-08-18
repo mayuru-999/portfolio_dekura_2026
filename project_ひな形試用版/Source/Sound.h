@@ -1,12 +1,12 @@
 #pragma once
 #include "../Library/GameObject.h"
 
-class SE:public GameObject
+class Sound :public GameObject
 {
 public:
-	SE();
-	SE(char* name);
-	~SE();
+	Sound();
+	Sound(char* name);
+	~Sound();
 
 private:
 

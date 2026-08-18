@@ -17,7 +17,6 @@ private:
 	int jgRImage;	//”»’èƒ‰ƒCƒ“
 	int jgacImage;	//”»’èƒ‰ƒCƒ“
 
-	int playerSpeed;
 	int movement;
 
 	bool move2L = FALSE;
@@ -25,5 +24,6 @@ private:
 	bool activeKey[3];
 	bool wasActive[3];
 
+	int playerLane;
 	VECTOR2 player;
 };

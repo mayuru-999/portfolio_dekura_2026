@@ -1,5 +1,10 @@
 ﻿#include "Player.h"
 #include "Notes.h"
+#include "GameOption.h"
+#include "Common.h"
+#include "Score.h"
+#include "Screen.h"
+#include "JudgeEffect.h"
 #include <algorithm>
 
 using namespace std;
@@ -10,9 +15,10 @@ Player::Player()
 	jgRImage = LoadGraph("data/image/skin/JGline_R.png");
 	jgacImage = LoadGraph("data/image/skin/JGline_active.png");
 
-	playerSpeed = 5;
 	movement = 0;
-	player = VECTOR2(561, 0);
+
+	playerLane = 1;
+	player = VECTOR2(191 + (playerLane * 74), 0);
 }
 
 Player::~Player()
@@ -46,8 +52,6 @@ void Player::Update()
 
 	PlayerMove();
 
-	
-
 	for (int i = 0; i < 3; i++)
 	{
 		if(activeKey[i])
@@ -59,21 +63,28 @@ void Player::Update()
 
 void Player::Draw()
 {
-	//DrawBox(0, 0, player.x, 720, GetColor(0, 0, 0), TRUE);
-	DrawBox(player.x, 0, player.x + 74 * 3, 720, GetColor(255, 255, 255), TRUE);
+	Common c;
+	DrawBox(0, 0, Screen::WIDTH, Screen::HEIGHT, GetColor(255, 255, 255), TRUE);
+	DrawBox(player.x, 0, player.x + 74 * 3, 720, GetColor(0, 0, 0), TRUE);
+
 	for (int i = 0; i < 12; i++) {
-		DrawGraph(196 + (74 * i), 600, jgLImage, TRUE);
+		DrawGraph(196 + (74 * i), c.judgeLine, jgRImage, TRUE);
 		DrawLine(191 + (74 * i), 0, 191 + (74 * i), 720, GetColor(155, 155, 155), 2);
 	}
 	for (int i = 0; i < 3; i++) {
-		DrawGraph(player.x + 5 + (74 * i), 600, jgRImage, TRUE);
+		DrawGraph(player.x + 5 + (74 * i), c.judgeLine, jgLImage, TRUE);
 	}
 	DrawLine(191 + (74 * 12), 0, 191 + (74 * 12), 720, GetColor(155, 155, 155), 2);
 	for (int i = 0; i < 3; i++)
 	{
 		if (activeKey[i]) {
-			DrawGraph(player.x + 5 + (74 * i), 600, jgacImage, TRUE);
+			DrawGraph(player.x + 5 + (74 * i), c.judgeLine, jgacImage, TRUE);
 		}
+	}
+
+	if (g.debugMode) 
+	{
+		DrawFormatString(0, 40, GetColor(255, 255, 255), "playerLane: %d", playerLane);
 	}
 }
 
@@ -81,13 +92,13 @@ void Player::PlayerMove()
 {
 	//移動モード
 	if (move2L) {
-		//判定バー移動速度(▶変数化する)
-		player.x -= playerSpeed;
-		movement -= playerSpeed;
+		player.x -= g.playerSpeed;
+		movement -= g.playerSpeed;
 		//移動量が1ライン分になったら
 		if (movement <= -74) {
 			//1ラインでぴったり止め、
 			player.x += -74 - movement;
+			playerLane--;
 			movement = 0;
 			//移動モードを解除する
 			move2L = FALSE;
@@ -95,10 +106,11 @@ void Player::PlayerMove()
 	}
 	else if (move2R)
 	{
-		player.x += playerSpeed;
-		movement += playerSpeed;
+		player.x += g.playerSpeed;
+		movement += g.playerSpeed;
 		if (movement >= 74) {
 			player.x += 74 - movement;
+			playerLane++;
 			movement = 0;
 			move2R = FALSE;
 		}
@@ -118,9 +130,10 @@ void Player::PlayerMove()
 
 void Player::CheckHitNotes(int num)
 {
-	VECTOR2 jg = VECTOR2(player.x + 5 + (74 * num), 600);
 	auto notes = FindGameObjects<Notes>();
 	for (auto n : notes) 
 	{
+		Common::HitType jg = n->isHit(playerLane + num);
+		s.AddScore(jg);
 	}
 }
