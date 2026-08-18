@@ -9,3 +9,137 @@ project_ひな形試用版/.vs/project/v17/ipch/AutoPCH/988b2493850f61f4/NOTES.i
 project_ひな形試用版/.vs/project/v17/ipch/AutoPCH/adc1a48ebf28e6ab/PLAYSCENE.ipch
 project_ひな形試用版/.vs/project/v17/ipch/AutoPCH/dd90dfc1451cb338/PLAYER.ipch
 project_ひな形試用版/.vs/project/v17/ipch/AutoPCH/f93b772b1ff81d6a/SCORE.ipch
+# ==============================
+# Visual Studio
+# ==============================
+
+# Visual Studio user-specific files
+.vs/
+
+# Build results
+[Bb]uild/
+[Bb]uilds/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# Visual Studio intermediate files
+[Oo]bj/
+[Bb]in/
+
+# Visual Studio cache
+*.VC.db
+*.VC.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio profiling
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Visual Studio Code Analysis
+*.codeanalysis
+*.codeanalysislog
+
+# ==============================
+# C / C++ generated files
+# ==============================
+
+# Precompiled headers
+*.gch
+*.pch
+*.ipch
+
+# Compiled object files
+*.obj
+*.o
+
+# Static libraries
+*.lib
+
+# Dynamic libraries
+*.dll
+
+# Executables
+*.exe
+
+# Debug symbols
+*.pdb
+*.ilk
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+
+# ==============================
+# Visual Studio generated files
+# ==============================
+
+*.VC.VC.opendb
+*.VC.db
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+
+# ==============================
+# Logs / temporary files
+# ==============================
+
+*.log
+*.tmp
+*.temp
+
+# ==============================
+# Windows
+# ==============================
+
+# Windows thumbnail cache
+Thumbs.db
+ehthumbs.db
+
+# Windows desktop.ini
+Desktop.ini
+
+# ==============================
+# Resharper
+# ==============================
+
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# ==============================
+# Rider
+# ==============================
+
+.idea/
+
+# ==============================
+# VS Code
+# ==============================
+
+.vscode/
+
+# ==============================
+# NuGet
+# ==============================
+
+packages/
+*.nupkg
+
+# ==============================
+# Misc
+# ==============================
+
+*.bak
+*.swp
+*.swo
