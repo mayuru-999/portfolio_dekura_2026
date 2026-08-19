@@ -4,6 +4,8 @@
 BootScene::BootScene()
 {
 	new DebugCursol();
+	AddFontFile("data/font/ArchivoBlack-Regular.ttf");
+	AddFontFile("data/font/Inter-VariableFont_opsz,wght.ttf");
 }
 
 BootScene::~BootScene()

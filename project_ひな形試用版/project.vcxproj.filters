@@ -78,6 +78,9 @@
     <ClCompile Include="Source\UiImage.cpp">
       <Filter>Ui</Filter>
     </ClCompile>
+    <ClCompile Include="Source\UiBox.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Screen.h" />

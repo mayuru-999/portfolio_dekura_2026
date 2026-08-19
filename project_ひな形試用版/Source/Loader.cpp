@@ -6,10 +6,6 @@
 
 Loader::Loader()
 {
-}
-
-Loader::Loader(int id)
-{
 	new Player();
 	Common c;
 	Common::SongData& s = SceneManager::selectedMusic;

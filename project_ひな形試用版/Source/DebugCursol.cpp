@@ -23,6 +23,9 @@ void DebugCursol::Draw()
 	if (!g.debugMode) return;
 	DrawLine(x, 0, x, Screen::HEIGHT, GetColor(255, 0, 0), 1);
 	DrawLine(0, y, Screen::WIDTH, y, GetColor(255, 0, 0), 1);
+
+	DrawLine(Screen::WIDTH / 2, 0, Screen::WIDTH / 2, Screen::HEIGHT, GetColor(0, 255, 0), 1);
+	DrawLine(0, Screen::HEIGHT / 2, Screen::WIDTH, Screen::HEIGHT / 2, GetColor(0, 255, 0), 1);
 	DrawCircle(x, y, 0.5, GetColor(255, 0, 0), TRUE);
 	DrawFormatString(x + 5, y - 5, GetColor(255, 0, 0), "X: %d, Y: %d", x, y);
 }

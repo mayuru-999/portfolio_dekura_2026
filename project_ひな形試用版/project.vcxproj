@@ -196,6 +196,7 @@
     <ClCompile Include="Source\Sound.cpp" />
     <ClCompile Include="Source\TitleScene.cpp" />
     <ClCompile Include="Source\TitleUi.cpp" />
+    <ClCompile Include="Source\UiBox.cpp" />
     <ClCompile Include="Source\UiButton.cpp" />
     <ClCompile Include="Source\UiImage.cpp" />
     <ClCompile Include="Source\UiLabel.cpp" />

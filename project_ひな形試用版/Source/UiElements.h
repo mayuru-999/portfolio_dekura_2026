@@ -7,6 +7,11 @@
 
 using namespace std;
 
+namespace UiFonts{
+	static string Archivo = "Archivo Brack";
+	static string Inter = "Inter Thin";
+}
+
 class UiLabel:public GameObject
 {
 public:
@@ -15,7 +20,7 @@ public:
 	~UiLabel() { DeleteFontToHandle(m_font); }
 	void Draw() override;
 
-	void SetText(const char* text) { m_text = text; }
+	void SetTextColor(int color) { m_color = color; }
 
 private:
 	VECTOR2 m_position;
@@ -51,12 +56,34 @@ private:
 	bool m_isClicked = false;
 	bool m_isHovered = false;
 	function<void()> m_onClick;
-}
-;class UiImage :public GameObject
+};
+
+class UiBox :public GameObject
+{
+public:
+	UiBox() {};
+	UiBox(int x, int y, int h, int w, int color, const char* text = "", int font = -1, int fontColor = -1);
+	~UiBox() { DeleteFontToHandle(m_font); }
+	void Draw() override;
+
+	void SetBoxColor(int color) { m_color = color; }
+	void SetTextColor(int color) { m_fontColor = color; }
+	void SetText(const char* text) { m_text = text; }
+
+private:
+	VECTOR2 m_position;
+	VECTOR2 m_size;
+	string m_text;
+	int m_font;
+	int m_color;
+	int m_fontColor;
+};
+
+class UiImage :public GameObject
 {
 public:
 	UiImage() {};
-	UiImage(int x, int y, int h, int w, int image, int frameColor = NULL);
+	UiImage(int x, int y, int h, int w, int image, int frameColor = -1, int frameThick = 2);
 	~UiImage() { DeleteGraph(m_image); }
 	void Draw() override;
 
@@ -67,4 +94,5 @@ private:
 	VECTOR2 m_size;
 	int m_image;
 	int m_frameColor;
+	int m_frameThick;
 };

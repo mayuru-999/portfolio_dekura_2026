@@ -15,15 +15,20 @@ public:
 	void UpdateUi();
 
 	int alpha = 0;
+
 private:
-	int titleImage;
-	int backgroundImage;
+	int headerGraph;
 	int selectedIndex = 0;
 
-	UiLabel* m_titleLabel;
+	int fontTitle;
+	int fontLabel;
+	int fontSmall;
+
+	UiImage* m_header;
 	UiImage* m_thumbnail;
-	UiButton* m_levelButtons[3];
-	UiButton* m_startButton;
+	UiLabel* m_titleLabel[1025];
+	UiBox* m_levelBoxes[3];
+	UiBox* m_startButton;
 
 	SongLoader loader;
 	//Common::SongData& selectedSong;

@@ -15,6 +15,7 @@ TitleScene::TitleScene()
 
 TitleScene::~TitleScene()
 {
+	DeleteGraph(titleImage);
 }
 
 void TitleScene::Update()
@@ -59,7 +60,7 @@ void TitleScene::Draw()
 {
 	SetDrawBlendMode(DX_BLENDMODE_ALPHA, alpha);
 	//DrawBox(0, 0, Screen::WIDTH, Screen::HEIGHT, GetColor(0, 0, 0), TRUE);
-	DrawGraph(0, 0, titleImage, TRUE);
+	DrawGraph(0, 0, titleImage, FALSE);
 	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
 
 	if (!g.debugMode) return;

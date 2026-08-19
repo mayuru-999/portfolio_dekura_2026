@@ -11,7 +11,6 @@ class Loader:public GameObject
 {
 public:
 	Loader();
-	Loader(int id);
 	~Loader();
 	void Update() override;
 

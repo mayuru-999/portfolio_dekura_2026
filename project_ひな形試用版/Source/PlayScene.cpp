@@ -5,7 +5,7 @@
 
 PlayScene::PlayScene()
 {
-	new Loader(1);
+	new Loader();
 }
 
 PlayScene::~PlayScene()
