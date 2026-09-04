@@ -32,7 +32,7 @@ void TitleScene::Update()
 		if (KeyPressed(KEY_INPUT_F10)) SceneManager::ChangeScene("PLAY");;
 	}
 	if (CheckHitKey(KEY_INPUT_SPACE)){
-		if (KeyPressed(KEY_INPUT_SPACE)) StateChange();
+		if (KeyPressed(KEY_INPUT_SPACE)) StateChange(SelectMusic);
 	}
 	if (CheckHitKey(KEY_INPUT_BACK)){
 		if (KeyPressed(KEY_INPUT_BACK)) StateChange(Title);
