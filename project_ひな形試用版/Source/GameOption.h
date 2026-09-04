@@ -7,7 +7,7 @@ public:
 	float soundVolume = 100.0f;
 	float musicVolume = 100.0f;
 
-	int judgeEffectPositionY = 450;
+	int judgeEffectPositionY = 100;
 
 	bool debugMode = false;
 	bool autoPlay = false;

@@ -1,6 +1,7 @@
 #include "TitleUi.h"
 #include "Screen.h"
 #include "CheckKey.h" 
+#include "TitleScene.h"
 
 TitleUi::TitleUi()
 {
@@ -13,14 +14,18 @@ TitleUi::TitleUi()
 	fontSmall = CreateFontToHandle(UiFonts::Inter.c_str(), 12, -1);
 
 	for (int i = 0; i < loader.songCount; i++) 
+	{
 		m_titleLabel[i] = new UiLabel(100, 100 + i * 50, loader.songs[i].name.c_str(), fontTitle, GetColor(0, 0, 0));
+	}
 
 	m_header	 = new UiImage(540, 23, 181, 45, headerGraph);
 	m_thumbnail  = new UiImage(800, 120, 360, 360, loader.songs[0].songImage, GetColor(0, 0, 0),3);
-	m_levelBoxes[0] = new UiBox(800, 500, 113, 56, GetColor(0, 0, 0), "EASY", fontLabel);
+	/*m_levelBoxes[0] = new UiBox(800, 500, 113, 56, GetColor(0, 0, 0), "EASY", fontLabel);
 	m_levelBoxes[1] = new UiBox(923, 500, 113, 56, GetColor(0, 0, 0), "NORMAL", fontLabel);
-	m_levelBoxes[2] = new UiBox(1046, 500, 113, 56, GetColor(0, 0, 0), "HARD", fontLabel);
-	m_startButton = new UiBox(800,572,1120,33, GetColor(0, 0, 0), "PLAY START", fontLabel);
+	m_levelBoxes[2] = new UiBox(1046, 500, 113, 56, GetColor(0, 0, 0), "HARD", fontLabel);*/
+	m_startButton = new UiBox(800, 500, 360, 56, GetColor(0, 0, 0), "PLAY START", fontLabel);
+
+	UpdateUi();
 }
 
 TitleUi::~TitleUi()
@@ -29,6 +34,7 @@ TitleUi::~TitleUi()
 
 void TitleUi::Update()
 {
+
 	if (CheckHitKey(KEY_INPUT_UP)) {
 		if (KeyPressed(KEY_INPUT_UP)) 
 		{
@@ -45,7 +51,7 @@ void TitleUi::Update()
 			UpdateUi();
 		}
 	}
-	if (CheckHitKey(KEY_INPUT_RETURN)) {
+	if (CheckHitKey(KEY_INPUT_RETURN) && canStart) {
 		if (KeyPressed(KEY_INPUT_RETURN))
 		{
 			SceneManager::selectedMusic = loader.songs[selectedIndex];
@@ -74,13 +80,10 @@ void TitleUi::Draw()
 void TitleUi::UpdateUi()
 {
 	m_thumbnail->SetImage(loader.songs[selectedIndex].songImage);
+
 	for (int i = 0; i < loader.songCount; i++)
 	{
-		int color = (i == selectedIndex) ? GetColor(255, 0, 0) : GetColor(0, 0, 0);
-		m_titleLabel[selectedIndex]->SetTextColor(color);
+		unsigned int color = (i == selectedIndex) ? GetColor(255, 0, 0) : GetColor(0, 0, 0);
+		m_titleLabel[i]->SetTextColor(color);
 	}
-	printfDx(
-		"selectedIndex=%d",
-		selectedIndex
-	);
 }

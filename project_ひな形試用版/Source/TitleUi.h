@@ -15,7 +15,7 @@ public:
 	void UpdateUi();
 
 	int alpha = 0;
-
+	bool canStart = false;
 private:
 	int headerGraph;
 	int selectedIndex = 0;

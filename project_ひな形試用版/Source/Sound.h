@@ -5,9 +5,9 @@ class Sound :public GameObject
 {
 public:
 	Sound();
-	Sound(char* name);
+	void playSound(const char* name);
 	~Sound();
 
 private:
-
+	int se;
 };

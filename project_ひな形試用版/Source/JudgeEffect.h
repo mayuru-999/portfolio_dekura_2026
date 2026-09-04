@@ -19,6 +19,6 @@ private:
 
 	int count = 0;
 	float alpha = 255.0f;
-	float lifeTime = 0.5f;
+	float lifeTime = 0.2f;
 	VECTOR2 position;
 };

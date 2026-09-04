@@ -15,17 +15,19 @@ private:
 	int titleState;
 	int alpha = 255;
 	TitleUi* titleUi;
-
+	
+public:
 	enum State
 	{
 		Title,
 		SelectMusic,
 		Transitioning
 	};
-public:
+
 	TitleScene();
 	~TitleScene();
 	void Update() override;
 	void Draw() override;
 	void StateChange(int newState = -1);
+	State getState() const { return static_cast<State>(titleState); }
 };

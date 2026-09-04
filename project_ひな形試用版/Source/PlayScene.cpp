@@ -2,10 +2,12 @@
 #include "Loader.h"
 #include "CheckKey.h"
 #include "Score.h"
+#include "Sound.h"
 
 PlayScene::PlayScene()
 {
 	new Loader();
+	new Sound();
 }
 
 PlayScene::~PlayScene()

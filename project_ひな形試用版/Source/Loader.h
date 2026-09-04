@@ -27,9 +27,15 @@ private:
 	Common::NoteData notes[1024];
 	int noteCount = 0;
 
+	int volume = 100;
+
+	float gameEnd = 0.0;
+	bool gameEnded = false;
+
 	int music;
 	int startTime;
 	float musicTime = 0.0f;
+	bool isLoaded = false;
 	bool isPlayed = false;
 	bool beforeDebugMode = false;
 };

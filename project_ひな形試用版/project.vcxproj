@@ -200,6 +200,7 @@
     <ClCompile Include="Source\UiButton.cpp" />
     <ClCompile Include="Source\UiImage.cpp" />
     <ClCompile Include="Source\UiLabel.cpp" />
+    <ClCompile Include="Source\UiResult.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

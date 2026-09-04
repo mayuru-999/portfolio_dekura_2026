@@ -81,6 +81,9 @@
     <ClCompile Include="Source\UiBox.cpp">
       <Filter>Ui</Filter>
     </ClCompile>
+    <ClCompile Include="Source\UiResult.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Screen.h" />

@@ -52,6 +52,6 @@ public:
 	float laneLeftPosition = 191.0f;	//レーンの左端の位置
 	float laneRightPosition = laneLeftPosition + (laneSpace * laneCount);	//レーンの右端の位置
 
-	float startDiray = 5.0f;		//ゲーム開始までのディレイ(秒)
+	float startDiray = 3.0f;		//ゲーム開始までのディレイ(秒)
 	float maxScore = 1010000.0f;	//最大スコア
 };

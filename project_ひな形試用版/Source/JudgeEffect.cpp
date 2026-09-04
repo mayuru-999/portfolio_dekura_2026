@@ -25,7 +25,8 @@ void JudgeEffect::Update()
 	count++;
 	if(count > lifeTime * Screen::FRAME_RATE)
 	{
-		alpha -= 5.0f;
+		position.y += 1.0f;
+		alpha -= 20.0f;
 		if (alpha <= 0) DestroyMe();
 	}
 }

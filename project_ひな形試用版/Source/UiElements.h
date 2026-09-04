@@ -45,6 +45,8 @@ public:
 	//[]の中に呼び出し側の変数を入れると、ここでその変数を扱える　<-ガチすげえ
 	//functionを引数として扱う場合、move()だと効率的　(値の移し替え)
 
+	//追記::キーボードやから結局使わないんんなんでなん
+
 private:
 	VECTOR2 m_position;
 	VECTOR2 m_size;
@@ -93,6 +95,23 @@ private:
 	VECTOR2 m_position;
 	VECTOR2 m_size;
 	int m_image;
+	int m_frameColor;
+	int m_frameThick;
+};
+
+class UiResult :public GameObject
+{
+public:
+	UiResult() {};
+	UiResult(int x, int y, int h, int w, int frameColor = -1, int frameThick = 2);
+	~UiResult() {};
+	void Draw() override;
+
+
+private:
+	VECTOR2 m_position;
+	VECTOR2 m_size;
+	int m_font;
 	int m_frameColor;
 	int m_frameThick;
 };

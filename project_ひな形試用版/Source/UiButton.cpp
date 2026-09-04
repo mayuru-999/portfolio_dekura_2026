@@ -31,8 +31,6 @@ void UiButton::Update()
 }
 void UiButton::Draw()
 {
-
-
 	DrawBox(m_position.x, m_position.y, m_position.x + m_size.x, m_position.y + m_size.y, GetColor(255, 255, 255), TRUE);
 	DrawString(m_position.x + 10, m_position.y + 10, m_text.c_str(), m_color);
 }

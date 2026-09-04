@@ -2,6 +2,7 @@
 #include "CheckKey.h" 
 #include "Screen.h"
 #include "Common.h"
+#include "Score.h"
 
 using namespace std;
 
@@ -10,6 +11,7 @@ TitleScene::TitleScene()
 	titleImage = LoadGraph("data/image/Title.jpg");
 	titleState = Title;
 
+	s.Init();
 	titleUi = new TitleUi();
 }
 
@@ -42,11 +44,13 @@ void TitleScene::Update()
 	case Title:
 		if (alpha <= 255) alpha += 10;
 		if (titleUi->alpha >= 0) titleUi->alpha -= 10;
+		if (titleUi->canStart != false)titleUi->canStart = false;
 		break;
 
 	case SelectMusic:
 		if (alpha >= 0) alpha -= 10;
 		if (titleUi->alpha <= 255) titleUi->alpha += 10;
+		if (titleUi->canStart != true)titleUi->canStart = true;
 		break;
 
 	default:

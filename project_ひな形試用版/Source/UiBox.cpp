@@ -1,8 +1,8 @@
 #include "UiElements.h"
-UiBox::UiBox(int x, int y, int h, int w, int color, const char* text, int font, int fontColor)
+UiBox::UiBox(int x, int y, int w, int h, int color, const char* text, int font, int fontColor)
 {
 	m_position = VECTOR2(x, y);
-	m_size = VECTOR2(h, w);
+	m_size = VECTOR2(w, h);
 	m_color = color;
 	m_text = text;
 	m_font = font;
