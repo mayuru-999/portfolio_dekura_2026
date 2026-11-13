@@ -13,6 +13,7 @@ public class Dumper : MonoBehaviour
         dir = Vector3.ProjectOnPlane(dir, transform.up).normalized; //ベクトルから台の面に垂直な成分を取り除く  //normalizedでベクトル強度を1に
         c.rigidbody.AddForce(dir * power, ForceMode.Impulse);       //射出
 
+        gameObject.transform.DOKill();
         gameObject.transform.DOPunchScale(Vector3.one * 5f, 0.5f, 10, 1);　//ボヨンってなる
     }
 }
