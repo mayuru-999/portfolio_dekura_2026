@@ -5,14 +5,23 @@ using UnityEngine.InputSystem;
 public class Flipper : MonoBehaviour
 {
     [SerializeField] Key key = Key.LeftArrow;
+    [SerializeField] float springPower = 2000f;
     [SerializeField] float restAngle = 0f;
     [SerializeField] float pressedAngle = 50f;
 
     HingeJoint hinge;
+    JointSpring hingeSpring;
 
-    void Awake() => hinge = GetComponent<HingeJoint>();
+    private void Awake()
+    {
+        hinge = GetComponent<HingeJoint>();
+        hingeSpring = hinge.spring;
 
-    void FixedUpdate()
+        hingeSpring.spring = springPower;
+        hinge.spring = hingeSpring;
+    }
+
+    private void FixedUpdate()
     {
         var spring = hinge.spring;
         bool pressed = Keyboard.current != null && Keyboard.current[key].isPressed;
