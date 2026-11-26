@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1765020969722960729}
   - component: {fileID: 3910863380833562011}
   - component: {fileID: 1359373895545310831}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 1299004046570320666}
   - component: {fileID: 8699116770679606659}
   - component: {fileID: 8522826341444802743}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ball
   m_TagString: Ball
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 5918440004676923116}
   - component: {fileID: 3205269148225401961}
   - component: {fileID: 2308065889684529716}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ball
   m_TagString: Ball
   m_Icon: {fileID: 0}
@@ -390,6 +390,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 62bde8a7b8149f84bbad7529217ac304, type: 3}
       propertyPath: m_Name
       value: baseball_01_4k
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 62bde8a7b8149f84bbad7529217ac304, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 62bde8a7b8149f84bbad7529217ac304, type: 3}
       propertyPath: m_IsActive
