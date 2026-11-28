@@ -9,8 +9,8 @@ public class Flipper : MonoBehaviour
     [SerializeField] float restAngle = 0f;
     [SerializeField] float pressedAngle = 50f;
 
-    HingeJoint hinge;
-    JointSpring hingeSpring;
+    static HingeJoint hinge;
+    static JointSpring hingeSpring;
 
     private void Awake()
     {
@@ -21,8 +21,9 @@ public class Flipper : MonoBehaviour
         hinge.spring = hingeSpring;
     }
 
-    private void FixedUpdate()
+    public void UpdateSpring(Key key)
     {
+        Debug.Log("Invoking");
         var spring = hinge.spring;
         bool pressed = Keyboard.current != null && Keyboard.current[key].isPressed;
 
